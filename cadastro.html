@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Mia</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Yaldevi:wght@200..700&display=swap" rel="stylesheet">
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="img/faviconGatoMia.png"> 
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div><img src="img/GatoMia.png" class="logo"></div>
+            <h1>Gato Mia</h1>
+            <ul>
+                <li><button class="btn"><a href="gatomia.html">Home</a></button></li>
+                <li><button class="btn"><a href="sobre.html">Sobre</a></button></li>
+                <li><button class="btn"><a href="contato.html">Contato</a></button></li>
+                <li><button class="btn"><a href="cadastro.html">Cadastro</a></button></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Busca...">
+                <button type="submit">🔍</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main class="form-content"> 
+        <div class="form-container">
+            <h1>Cadastro</h1>
+            <form action="processar_cadastro.php" method="POST">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+              
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+              
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="Digite seu número de telefone" required>
+              
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+              
+              <label for="confirmar_senha">Confirmar senha</label>
+              <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
+              <button class="form-container" type="submit">Cadastrar</button>
+              
+            </form>
+          </div>    
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="social-media">
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/?lang=pt-br" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/login/pt" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>        
+        </div>
+    </footer>
+</body>
+</html>
